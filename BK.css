@@ -7,7 +7,7 @@
 html,body{
     background-color:rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    height: auto;
+    height: 100%;
     margin: 0px;
     overflow-x: hidden; 
     
@@ -45,12 +45,21 @@ html,body{
     
  }
 
+ .s-box{
+   position: relative;
+ }
+
  .s-box .box{
+  
     border-radius: 20px;
     text-align: center;
     cursor: pointer;
-    height: 20px;
-    /* width: 200px; */
+    height: 50px;
+    width: 200px;
+ }
+
+ .s-box .i{
+   position: absolute;
  }
 
 
@@ -130,7 +139,7 @@ html,body{
 }
 
 /* .button{
-   border-color: rgb(95, 50, 8) ;
+   color: rgb(95, 50, 8) ;
    
 }
 
@@ -177,5 +186,45 @@ html,body{
 .footer{
   border-bottom: 2px solid gray;
   padding-bottom: 20px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(100, 99, 99);
+}
+
+.footer-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.footer-left img{
+   margin-right: -50px;
+}
+
+.footer-left p{
+   align-items: center;
+   font-size: small;
+   color: antiquewhite;
+   padding-left: 90px;
+  
+}
+
+.social-icons i{
+   color: antiquewhite;
+   margin-left: 20px;
+}
+
+.bk-logo{
+    width:60px;
+}
+
+.social-icons{
+    display:flex;
+    gap:20px;
+    font-size:20px;
 }
 
